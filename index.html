@@ -540,81 +540,48 @@
       <section class="section section-buy-competition" id="buy-competition">
         <div class="container">
           <div class="competition-dex-layout">
-            <!-- Left Column: Competition Information -->
-            <div class="competition-column">
-              <div class="competition-card">
-                <!-- Competition Status Banner -->
-                <div class="competition-banner">
-                  <div class="banner-status">
+            <!-- Left Column: IMG Chart -->
+            <div class="chart-column">
+              <div class="chart-card">
+                <!-- Chart Header -->
+                <div class="chart-header">
+                  <div class="chart-title">
                     <span class="status-dot"></span>
-                    <span class="status-text">BUY COMPETITION</span>
+                    <span class="status-text">IMG CHART</span>
                   </div>
-                  <div class="banner-timer">
+                  <div class="chart-subtitle">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM12 20C7.6 20 4 16.4 4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 16.4 16.4 20 12 20Z"
-                        fill="currentColor" />
-                      <path d="M12.5 7H11V13L16.2 16.2L17 14.9L12.5 12.2V7Z" fill="currentColor" />
+                      <path d="M3 3v18h18V3H3zm16 16H5V5h14v14z" fill="currentColor"/>
+                      <path d="M7 12l2-2 2 2 4-4 2 2v6H7v-4z" fill="currentColor"/>
                     </svg>
-                    <span>Ends: September Tuesday 12:30 PM EST</span>
+                    <span>Real-time price data from DexScreener</span>
                   </div>
                 </div>
 
-
-
-                <!-- Contest Types -->
-                <div class="contest-types">
-                  <div class="contest-type primary">
-                    <div class="contest-header">
-                      <h4>Biggest Buy Contest</h4>
-                    </div>
-                    <div class="contest-details">
-                      <div class="prize-info">
-                        <span class="prize-label">Prize:</span>
-                        <span class="prize-value">50,000 IMG</span>
-                      </div>
-                      <div class="contest-rules">
-                        <span class="rule-text">Highest single purchase wins</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="contest-type secondary">
-                    <div class="contest-header">
-                      <h4>$25 Buy Contest</h4>
-                    </div>
-                    <div class="contest-details">
-                      <div class="prize-info">
-                        <span class="prize-label">Prize:</span>
-                        <span class="prize-value">25,000 IMG</span>
-                      </div>
-                      <div class="contest-rules">
-                        <span class="rule-text">2 winners selected randomly</span>
-                      </div>
-                    </div>
-                  </div>
+                <!-- DexScreener Chart Widget -->
+                <div class="chart-container">
+                  <iframe 
+                    src="https://dexscreener.com/solana/cxgcuecqdabpvjwh5cweir9y5fy9sktjhgutmc95bgy3?embed=1&theme=dark&trades=0&info=0"
+                    width="100%" 
+                    height="400"
+                    frameborder="0"
+                    title="IMG Token Chart"
+                    class="dexscreener-chart">
+                  </iframe>
                 </div>
 
-                <!-- How to Participate -->
-                <div class="participation-guide">
-                  <h4 class="guide-title">How to Participate</h4>
-                  <div class="guide-steps">
-                    <div class="step">
-                      <div class="step-number">1</div>
-                      <span>Use any trading platform</span>
-                    </div>
-                    <div class="step">
-                      <div class="step-number">2</div>
-                      <span>Swap SOL for IMG tokens</span>
-                    </div>
-                    <div class="step">
-                      <div class="step-number">3</div>
-                      <span>Hold tokens until competition ends to qualify</span>
-                    </div>
+                <!-- Chart Info -->
+                <div class="chart-info">
+                  <div class="info-item">
+                    <span class="info-label">Powered by:</span>
+                    <a href="https://dexscreener.com/solana/cxgcuecqdabpvjwh5cweir9y5fy9sktjhgutmc95bgy3" target="_blank" rel="noopener noreferrer" class="info-link">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" fill="currentColor"/>
+                      </svg>
+                      DexScreener
+                    </a>
                   </div>
                 </div>
-
-
               </div>
             </div>
 

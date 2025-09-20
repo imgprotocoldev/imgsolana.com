@@ -3385,8 +3385,8 @@ body::before {
   z-index: 2;
 }
 
-/* Competition Column Styling */
-.competition-column {
+/* Chart Column Styling */
+.chart-column {
   background: linear-gradient(135deg, #111827 0%, #0f1418 100%);
   border: 1px solid #1f2937;
   border-radius: 8px;
@@ -3394,6 +3394,85 @@ body::before {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
+}
+
+.chart-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.chart-card {
+  text-align: left;
+}
+
+/* Chart Header */
+.chart-header {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.chart-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.chart-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Chart Container */
+.chart-container {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.dexscreener-chart {
+  border-radius: 6px;
+  background: transparent;
+}
+
+/* Chart Info */
+.chart-info {
+  padding: 12px 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.info-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-link:hover {
+  color: var(--accent-2);
 }
 
 .competition-column::before {
@@ -3751,7 +3830,7 @@ body::before {
     padding: 0 20px;
   }
 
-  .competition-column,
+  .chart-column,
   .dex-column {
     padding: 30px;
   }
@@ -3768,7 +3847,7 @@ body::before {
     padding: 0 16px;
   }
 
-  .competition-column,
+  .chart-column,
   .dex-column {
     padding: 16px;
   }
@@ -3789,7 +3868,7 @@ body::before {
 
 @media (max-width: 480px) {
 
-  .competition-column,
+  .chart-column,
   .dex-column {
     padding: 12px;
   }
